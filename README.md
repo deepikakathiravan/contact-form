@@ -1,2 +1,198 @@
-# contact-form
-to check whether its working or not as a beginner.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       html,body{
+        height: 100%;
+       }
+       #body{
+        margin: 20px;
+        box-sizing: border-box;
+        color:rgb(242, 244, 246);
+        background: linear-gradient(135deg, #4facfe,#43e97b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'segoe UI',sans-serif;
+        }
+        h1{
+            align-items: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .title{
+            color: black;
+            border-bottom: 3px solid black;
+            display: inline-block;
+        }
+        .title:hover{
+            color: rgb(239, 75, 75);
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+        ::placeholder{
+            color: #999;
+        }
+        table{
+            width: 100%;
+        }
+        #btn{
+            width: 100%;
+            padding: 12px;
+            color:white;
+            background:#e53935;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-colr 0.2s ease,color 0.2s ease;
+        }
+        #btn:hover{
+            color:rgb(133, 11, 11);
+            background-color:#ff3a1a;
+            transition: 0.2s ease;
+        }
+        textarea{
+     
+            height: 170px;
+            padding:10px;
+            font-size: 16px;
+            font-family: Helvetica, sans-serif;
+            resize: none;
+            overflow: auto;
+            background-color: #f9f9f9;
+         
+        }
+        input,textarea,select{
+            width:100%;
+            max-width: 100%;
+           border: 1px solid #ccc;
+            border-radius: 6px; 
+            box-sizing: border-box;
+            margin-top: 5px;
+            padding: 10px;   
+        }
+        input:focus,
+        textarea:focus,
+        select:focus{
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76,175,80,0.4);
+            outline: none;
+        }
+        .fill{
+            bottom: 0;
+            position: static;
+            width: 100%;
+            left: 0;
+            padding: 10px;
+            color:#999;
+        }
+        #form{
+            color:black;
+            background-color: aqua;
+            background: linear-gradient(to bottom,#ffffff,#f2f2f2);
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            width: 90%;
+            margin: 20px autp;
+            padding: 20px;
+            max-width: 420px;
+            text-align: left;
+        }
+        label{
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+        }
+        @media (max-width:768px) {
+            body{
+                margin:10px;
+            }
+            .form-group{
+                flex-direction: row;
+                align-items:center;
+            }
+            label{
+                width: 150px;
+            }
+            h1{
+                font-size: 24px;
+            }
+            #form{
+                padding: 15px;
+            }
+            textarea{
+                height: 120px;
+            }
+            input,textarea{
+                flex:1;
+            }
+            title{
+                font-size: 22px;
+            }
+            marquee{
+                    font-size: 14px;
+                }
+            
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+        }
+        .form-container{
+            max-width: 420px;
+            margin:40px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body id="body"> <div class="form-container">
+    <h1 class="title">CONTACT FORM</h1>
+    <marquee behavior="alternate" class="fill" direction="right">Welcome to contact page🤗</marquee>
+    <form action="" id="form">
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text"  placeholder="Your Name"> 
+       </div>
+       <div class="form-group">
+        <label for="mail id">E-mail Id</label>
+        <input type="email"  placeholder="Your E-mail">
+        </div>
+        <div class="form-group">
+           <label for="">Field</label>
+        <select name="" id="">
+            <option value="">select your field</option>
+            <option value="">Student</option>
+            <option value="">IT employee</option>
+            <option value="">Entreprenuer</option>
+            <option value="">Experienced</option>
+         </select>
+        </div>
+        <div class="form-group">
+            <label for="">message</label>
+        <textarea name="msg" id="msg" rows="4" placeholder=" Write ur Message..."></textarea>
+      </div>
+      <div class="form-group">
+           <label for="">Date of contact</label>
+      <input type="month" required>
+      </div>
+      <div class="form-group">
+           Sumbit  <input type="submit" name="" id="btn" placeholder="Submit">
+       </div>
+    </form>
+    <marquee behavior="alternate" class="fill" direction="right">Thankyou for fillingup 🕵🏻‍♂️</marquee>
+</div>
+</body>
+</html>
